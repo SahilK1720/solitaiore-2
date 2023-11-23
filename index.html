@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solitaire</title>
+    <link rel="stylesheet" href="./startPage/start.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="./assets/images/logo.png" alt="logo">
+        </div>
+        <div class="form">
+            <form id="myForm" action="./intructionPage/instruction.html">
+                <label class="label" for="uname">Username:</label><br>
+                <input class="input" type="text" id="uname" name="uname" placeholder="Enter your username" required><br>
+                <label class="label" for="nname">Nickname:</label><br>
+                <input class="input" type="text" id="nname" name="nname" placeholder="Enter your nickname" required><br><br>
+                <div id="play" onclick="submit()">
+                    <button>Proceed</button>
+                </div>
+              </form> 
+        </div>
+
+    </div>
+    <script src="./startPage/start.js"></script>
+</body>
+</html>

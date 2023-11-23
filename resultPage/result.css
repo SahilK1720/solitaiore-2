@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(../assets/images/sol.jpg);
+    background-size: cover;
+    margin-top: 5vh;
+    font-family: 'Raleway', sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Styling for the result panel */
+.result{
+    padding-top: 20px;
+    padding-left: 60px;
+    height: 38vh;
+    width: 20vw;
+    background-color: #728b75;
+    text-align: center;
+    font-size: 1rem;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: rgb(56, 59, 20);
+    
+}
+
+.text{
+    background-color: #fffefe;
+    box-shadow: 5px 5px 2px rgb(13, 12, 12);
+    width: 13vw;
+}
+
+/* Play Again button styling */
+button{
+    margin-top: 8vh;
+    height: 4rem;
+    width: 9rem;
+    border-radius: 15px;
+    font-size: 1.3rem;
+    border: none;
+    box-shadow: 3px 3px 2px rgb(13, 12, 12);
+    background-color: #728b75;
+    color: white;
+    font-weight: 800;
+    cursor: pointer;
+}

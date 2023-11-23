@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	text-align: left;
+	font-size: 19px;
+	font-family: 'Raleway', sans-serif;
+	letter-spacing: 0.8px;
+	line-height: 25px;
+	user-select: none;
+	background-image: url(../sol.jpg);
+	background-size: cover;
+}
+
+button{
+	position: absolute;
+	top: 12px;
+	right: 19px;
+	background-color: #506C42;
+	color: white;
+	border-radius: 10px;
+	border: 2px solid white;
+	width: 15vw;
+	height: 2vw;
+}
+
+#container{
+    text-align:center;
+	width: 100vw;
+	height: 100vh;
+}
+
+/* The main container for the game area */
+#gameArea{
+	position: relative;
+	top: calc(50% - 348px);
+	width: 728px;
+	height: 600px;
+	border: 10px solid;
+	border-radius: 25px;
+	text-align: left;
+	margin: auto;
+	padding: 5px;
+	background: #056214;
+	border: 6px solid white;
+}
+
+/* A span within the game area, for "press D to deal again text", positioned at the bottom right */
+#gameAreaSpan{
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+}
+
+/* Base style for all card and placeholder blocks */
+.cardBlock, .blankBlock, .cardBlockNewClick, .cardBlockFlip, .cardBlockAce{
+	display: inline-block;
+	position: relative;
+	width: 92px;
+	height: 127px;
+	border: 1px solid;
+	margin: 10px 5px;
+}
+
+/* Style for clickable card blocks */
+.cardBlockNewClick{
+	cursor: pointer;
+}
+
+/* Style for cards that are flipped showing their face */
+.cardBlockFlip{
+	width: 94px;
+	height: 129px;
+	border: none;
+}
+
+/* Style for blank blocks where a card will be placed */
+.blankBlock{
+	width: 94px;
+	height: 129px;
+	border: none;
+}
+
+/* Container for the score display */
+#scoreArea{
+	border-radius: 10px;
+    width: 738px;
+    position: absolute;
+    margin: auto;
+    top: calc(50% + 241px);
+    left: calc(50% - 379px);
+    border-top: 0;
+    height: 96px;
+}
+
+/* Individual score block that holds the value */
+.scoreBlock{
+	position: relative;
+	top: 38px;
+	left: 12px;
+	width: 21.2vw;
+	height: 56px;
+	border: 2px solid white;
+	display: inline-block;
+	background-color: #506C42;
+	border-radius: 10px;
+	margin-right: 1px;
+}
+
+/* Style for the element displaying the score value */
+.scoreValue{
+	display: block;
+	position: relative;
+	top: 11px;
+	font-size: 26px;
+	color: rgb(12, 46, 4);
+}
+
+/* Defines the style for individual cards */
+.card{
+	top: -11px;
+	left: -11px;
+	cursor: pointer;
+	border:1px solid #f7f7f7;
+	transition:1s;
+}
+
+.topClass2{
+	top:12px;
+}
+
+.topClass3{
+	top:34px;
+}
+
+.topClass4{
+	top:56px;
+}
+
+.topClass5{
+	top:78px;
+}
+
+.topClass6{
+	top:100px;
+}
+
+.topClass7{
+	top:122px;
+}
+
+.topClass8{
+	top:144px;
+}
+
+.topClass9{
+	top:166px;
+}
+
+.topClass10{
+	top:188px;
+}
+
+.topClass11{
+	top:210px;
+}
+
+.topClass12{
+	top:232px;
+}
+
+.topClass13{
+	top:254px;
+}
+
+.topClass14{
+	top:276px;
+}
+
+.topClass15{
+	top:298px;
+}
+
+.topClass16{
+	top:320px;
+}
+
+.topClass17{
+	top:342px;
+}
+
+.topClass18{
+	top:364px;
+}
+
+.topClass18{
+	top:388px;
+}
+
+.ace .card{
+	top: -10px;
+}
+
+
+.ncbSpan, .ncbSpanClose{
+	position: absolute;
+	font-size: 124px;
+	top: 44px;
+	left: 8px;
+}
+
+.ncbSpanClose{
+	font-size: 100px;
+}
+
+/* Hides elements within a card that is meant to be hidden (like numbers and suits), used for face-down cards */
+.cardHidden .number-top, .cardHidden .number-bottom, .cardHidden .suit-top, .cardHidden .suit-bottom, .cardHidden .suit-centre{
+	display:none;
+}
+
+/* Styles for a hidden card to show a default cursor and a gradient background to simulate a face-down card */
+.cardHidden{
+	cursor:default;
+	background-image: linear-gradient(to bottom, transparent 50%, #23457d 50%),
+		linear-gradient(to right, #6088bd 50%, #23457d 50%);
+	background-size: 10px 10px, 10px 10px;
+	border:1px solid rgb(211, 211, 224);
+
+}
+
+.scoreSpan{
+	display: block;
+}
+
+
